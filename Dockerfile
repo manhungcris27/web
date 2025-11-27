@@ -1,6 +1,6 @@
 FROM tomcat:9.0-jdk17
 
-RUN rm -rf /usr/local/tomcat/webapps/ROOT
+RUN rm -rf /usr/local/tomcat/webapps/*
 
 COPY ./dist/Laptrinh_WEB.war /usr/local/tomcat/webapps/ROOT.war
 
